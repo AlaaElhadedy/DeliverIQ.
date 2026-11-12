@@ -1,3 +1,32 @@
+Why do food orders arrive late, and can we predict it before it happens? 🚚
+
+I just finished an end-to-end data project to answer exactly that.
+
+📊 The data: ~45,000 delivery orders (weather, traffic, courier details, locations)
+
+🧹 Cleaning + feature engineering: distance, order hour, prep time, and a "late order" label
+
+🤖 Three models compared:
+• Random Forest: F1 0.84 | ROC-AUC 0.97 ✅
+• XGBoost: F1 0.83 | ROC-AUC 0.97
+• Logistic Regression: F1 0.71 | ROC-AUC 0.91
+
+💡 What I found:
+• Evening hours (7–9 PM) have the highest late rate
+• Heavy traffic and bad weather push delivery time up
+• Orders with multiple deliveries at once are more likely to be late
+• Courier rating is a strong predictor, but it's more likely a result of delays than a cause (a good reminder that correlation is not causation)
+
+📈 I turned the results into an interactive dashboard with data-driven recommendations, like adding couriers before peak hours and adding time buffers in bad weather.
+
+🛠 Stack: Python, Pandas, Scikit-learn, XGBoost, React, Recharts, Framer Motion, Vercel
+
+🔗 Live dashboard: [(https://index-html-j0vyxsrpy-alaaelhadedys-projects.vercel.app/)]
+
+I'd love your feedback, especially from anyone working in logistics or delivery. What would you add?
+
+#DataAnalysis #MachineLearning #Python #DataScience #React #Logistics #Portfolio
+
 الفكرة
 شركات التوصيل بتخسر فلوس وعملاء بسبب التأخير. المشروع بيجاوب على سؤالين: إيه العوامل اللي بتسبب تأخر الطلبات؟ وهل نقدر نتوقع الطلب المتأخر قبل ما يحصل؟
 
